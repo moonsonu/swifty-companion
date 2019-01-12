@@ -22,7 +22,7 @@ import SVProgressHUD
 //    }
 //}
 
-class Main: UIViewController {
+class Main: UIViewController, UITextFieldDelegate {
 
     var token = String()
     let url : String = "https://api.intra.42.fr"
@@ -53,6 +53,7 @@ class Main: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        intraID.delegate = self
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
@@ -62,6 +63,15 @@ class Main: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     func getToken() {
         Alamofire.request(url + authLink, method: .post, parameters: ["grant_type" : "client_credentials", "client_id" : uid, "client_secret" : secret]).validate().responseJSON { response in
             switch response.result {

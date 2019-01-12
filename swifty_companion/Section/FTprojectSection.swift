@@ -32,7 +32,7 @@ class FTprojectSection: SectionProtocol {
     }
     init(for data: JSON) {
         for ft in data["projects_users"] {
-            if ft.1["cursus_ids"][0].int == 1 {
+            if ft.1["cursus_ids"][0].int != 4 {
                 if ft.1["project"]["parent_id"].string == nil {
                     let tf = ("\(ft.1["validated?"])")
                     if (ftvalid?.append(tf)) == nil {
