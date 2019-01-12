@@ -12,16 +12,6 @@ import SwiftyJSON
 import Alamofire
 import SVProgressHUD
 
-//struct Skill {
-//    var name: String
-//    var level: Int
-//    
-//    init(_ dictionary: [String:Any]) {
-//        self.name = dictionary["name"] as? String ?? ""
-//        self.level = dictionary["level"] as? Int ?? 0
-//    }
-//}
-
 class Main: UIViewController, UITextFieldDelegate {
 
     var token = String()
@@ -59,8 +49,6 @@ class Main: UIViewController, UITextFieldDelegate {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         getToken()
-
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -98,7 +86,6 @@ class Main: UIViewController, UITextFieldDelegate {
             switch response.result {
             case .success:
                 print("Success1")
-                //parsing??
                 self.json = JSON(response.value!)
                 if (self.json?.isEmpty)! {
                     let alert = UIAlertController(title: "Intra ID not found", message:

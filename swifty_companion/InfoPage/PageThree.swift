@@ -141,67 +141,6 @@ class PageThree: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         return UITableViewCell()
     }
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "FTprojectCell", for: indexPath) as! FTProjectTable
-//        let cursusID = json!["projects_users"][indexPath.row]["cursus_ids"][0].int
-//        if (cursusID == 1)
-//        {
-//            let FTname = json!["projects_users"][indexPath.row]["project"]["name"].string
-//            //let FTslug = json!["projects_users"][indexPath.row]["project"]["slug"].string
-//            let FTgrade = json!["projects_users"][indexPath.row]["final_mark"].int
-//            let FTstatus = json!["projects_users"][indexPath.row]["status"].string
-//            let FTvalidate = json!["projects_users"][indexPath.row]["validated?"].bool
-//
-//            cell.FTprojectName.text = FTname!
-//
-//            if (FTstatus != "finished") {
-//                cell.FTprojectGrade.text = FTstatus!
-//            }
-//            else {
-//                if (FTvalidate == false) {
-//                    cell.FTprojectGrade.textColor = UIColor.red
-//                }
-//                else {
-//                    cell.FTprojectGrade.textColor = UIColor.green
-//                }
-//                cell.FTprojectGrade.text = String(FTgrade!)
-//            }
-//        }
-//        else {
-//            let cell2 = tableView.dequeueReusableCell(withIdentifier: "CprojectCell", for: indexPath) as! CProjectTable
-//            let Cname = json!["projects_users"][indexPath.row]["project"]["name"].string
-//            let Cslug = json!["projects_users"][indexPath.row]["project"]["slug"].string
-//            let Cgrade = json!["projects_users"][indexPath.row]["final_mark"].int
-//            let Cstatus = json!["projects_users"][indexPath.row]["status"].string
-//            let Cvalidate = json!["projects_users"][indexPath.row]["validated?"].bool
-//
-//            cell2.CprojectName.text = Cslug! + " - " + Cname!
-//
-//            if (Cstatus != "finished") {
-//                cell2.CprojectGrade.text = Cstatus!
-//            }
-//            else {
-//                if (Cvalidate == false) {
-//                    cell2.CprojectGrade.textColor = UIColor.red
-//                }
-//                else {
-//                    cell2.CprojectGrade.textColor = UIColor.green
-//                }
-//                cell2.CprojectGrade.text = String(Cgrade!)
-//            }
-//            return cell2
-//        }
-//        return cell
-
-//        cell.contentView.backgroundColor = UIColor.clear
-//        cell.skillName.text = name! + " - " + String(level!)
-//        cell.skillName.numberOfLines = 0
-//
-//        cell.skillPB.setProgress(level! / 20, animated: false)
-//
-//        cell.SPB.trackColor = UIColor.black
-//        cell.SPB.progressColor = UIColor.red
-//        cell.SPB.setProgressWithAnimation(duration: 1.0, value: level2)
-
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
