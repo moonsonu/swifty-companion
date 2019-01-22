@@ -2,7 +2,7 @@
 - The project is to make an application that shows one's information from 
 [42 intra website](https://intra.42.fr/), using the latest 42 API.
 
-[](scexample.gif)
+[](swiftycompanion.gif)
 #
 Swift version 4.2.1
 Xcode Version 10.1
