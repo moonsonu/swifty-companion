@@ -1,6 +1,7 @@
 # swifty-companion
 - The project is to make an application that shows one's information from 
 [42 intra website](https://intra.42.fr/), using the latest 42 API.
+- Used of Alomafire, SwiftyJson, SVPreogressHUD
 
 ![](swiftycompanion.gif)
 #
@@ -23,4 +24,3 @@ Bonus :
 - [X] Recreate token at expire date
 - [X] Design
 - [X] Srcollview
-
