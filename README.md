@@ -1,8 +1,11 @@
 # swifty-companion
-## - The project is to make an application that shows one's information from [42 intra website](https://intra.42.fr/), using the latest 42 API.
+- The project is to make an application that shows one's information from 
+[42 intra website](https://intra.42.fr/), using the latest 42 API.
 
-## Swift version 4.2.1
-## Xcode Version 10.1
+[](scexample.gif)
+#
+Swift version 4.2.1
+Xcode Version 10.1
 
 Mandatory Part :
 - [X] Must have at least 2 Views
